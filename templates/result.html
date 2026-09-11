@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Beard-O-Meter Results</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+
+    <!-- ================================================= -->
+    <!-- HEADER -->
+    <!-- ================================================= -->
+
+    <h1>
+        🧔 Beard-O-Meter
+    </h1>
+
+    <p>
+        Your completely unnecessary facial-hair analysis 😂
+    </p>
+
+
+    <!-- ================================================= -->
+    <!-- ANALYZED IMAGE -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📷 Facial Analysis
+        </h2>
+
+        <img
+            src="{{ url_for('uploaded_file', filename=analysis.filename) }}"
+            alt="Analyzed face"
+            class="result-image"
+        >
+
+        <p class="note">
+
+            🟢 Face
+
+            &nbsp;&nbsp;&nbsp;
+
+            🔵 Moustache region
+
+            &nbsp;&nbsp;&nbsp;
+
+            🟠 Beard region
+
+            &nbsp;&nbsp;&nbsp;
+
+            🟣 Landmarks
+
+        </p>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- CURRENT FACIAL HAIR -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            📊 Current Facial Hair
+        </h2>
+
+
+        <div class="result-grid">
+
+
+            <!-- BEARD -->
+
+            <div class="result-box">
+
+                <h3>
+                    🧔 Beard
+                </h3>
+
+                <p>
+
+                    Status:
+
+                    <strong>
+                        {{ analysis.beard_status }}
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Density:
+
+                    <strong>
+                        {{ analysis.beard_density }}%
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Estimated hairs:
+
+                    <strong>
+                        ~{{ analysis.beard_count }}
+                    </strong>
+
+                </p>
+
+            </div>
+
+
+            <!-- MOUSTACHE -->
+
+            <div class="result-box">
+
+                <h3>
+                    👨 Moustache
+                </h3>
+
+                <p>
+
+                    Status:
+
+                    <strong>
+                        {{ analysis.moustache_status }}
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Density:
+
+                    <strong>
+                        {{ analysis.moustache_density }}%
+                    </strong>
+
+                </p>
+
+
+                <p>
+
+                    Estimated hairs:
+
+                    <strong>
+                        ~{{ analysis.moustache_count }}
+                    </strong>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- FUTURE PREDICTION -->
+    <!-- ================================================= -->
+
+    <div class="card future-card">
+
+        <h2>
+            🔮 Future Prediction
+        </h2>
+
+
+        <div class="prediction">
+
+
+            <!-- BEARD -->
+
+            <div>
+
+                <h3>
+                    🧔 Beard Potential
+                </h3>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        style="width: {{ analysis.beard_potential }}%;"
+                    ></div>
+
+                </div>
+
+
+                <strong>
+
+                    {{ analysis.beard_potential }}%
+
+                </strong>
+
+            </div>
+
+
+            <!-- MOUSTACHE -->
+
+            <div>
+
+                <h3>
+                    👨 Moustache Potential
+                </h3>
+
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        style="width: {{ analysis.moustache_potential }}%;"
+                    ></div>
+
+                </div>
+
+
+                <strong>
+
+                    {{ analysis.moustache_potential }}%
+
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <p class="funny-text">
+
+            "The beard is loading..." 😂
+
+        </p>
+
+
+        <p class="note">
+
+            This is an entertainment/demo prediction,
+            not a scientific forecast.
+
+        </p>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- BEARD LOADING TIME -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            ⏳ Estimated Beard Loading Time
+        </h2>
+
+
+        <p
+            style="
+                font-size: 32px;
+                font-weight: 900;
+                margin: 20px 0;
+            "
+        >
+
+            {{ analysis.beard_loading_time }}
+
+        </p>
+
+
+        <!-- LOADING BAR -->
+
+        <div class="progress">
+
+            <div
+                class="progress-bar"
+                style="
+                    width: {{ analysis.beard_loading_progress }}%;
+                "
+            ></div>
+
+        </div>
+
+
+        <p>
+
+            <strong>
+                {{ analysis.beard_loading_progress }}%
+            </strong>
+
+            downloaded
+
+        </p>
+
+
+        <p class="funny-text">
+
+            {{ analysis.beard_loading_message }}
+
+        </p>
+
+
+        <p class="note">
+
+            ⚠️ Facial hair may download slower than expected.
+            Please do not unplug your face.
+
+        </p>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- FUNNY DISCLAIMER -->
+    <!-- ================================================= -->
+
+    <div class="card">
+
+        <h2>
+            🧪 Extremely Scientific Conclusion
+        </h2>
+
+
+        <p
+            style="
+                font-size: 22px;
+                font-weight: 700;
+            "
+        >
+
+            The Beard-O-Meter has spoken.
+
+        </p>
+
+
+        <p class="funny-text">
+
+            🧔 Your face is currently
+            doing whatever it was already going to do.
+
+        </p>
+
+
+        <p class="note">
+
+            Our scientists have absolutely no idea
+            what they are doing.
+
+        </p>
+
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- BUTTON -->
+    <!-- ================================================= -->
+
+    <a href="/">
+
+        <button>
+
+            📷 Analyze Another Photo
+
+        </button>
+
+    </a>
+
+
+</div>
+
+</body>
+
+</html>
