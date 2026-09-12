@@ -12,7 +12,7 @@
 ### Team Members
 
 - Member 1: [Sathyajith K M] - [College Of Engineering Trikaripur]
-- Member 2: [Prathyuhs Jyan P] - [College Of Engineering Trikaripur]
+- Member 2: [Prathyush Jayan P] - [College Of Engineering Trikaripur]
 
 ### Project Description
 Beard-O-Meter is a completely unnecessary AI-powered facial-hair analyzer that examines a person's face and estimates their current beard and moustache status. It also gives a hilariously unreliable prediction of future beard and moustache growth.
