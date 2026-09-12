@@ -6,7 +6,7 @@
 
 
 ## Basic Details
-### Team Name: [Dream !!]
+### Team Name: [Dream 11]
 
 
 ### Team Members
