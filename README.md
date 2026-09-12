@@ -114,56 +114,31 @@ Then open:
 
 http://127.0.0.1:5000
 
-Upload a photograph and let the Beard-O-Meter perform its extremely important analysis.
 
-### Project Documentation
-For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+https://drive.google.com/file/d/1oyd1lB3t9hE1KCdbQjxEZJUM7v5pa9PU/view?usp=sharing
+https://drive.google.com/file/d/1R7gYprsYLWUUT8ftqSeestMVowpQtAWY/view?usp=sharing
+https://drive.google.com/file/d/1a3Go8csMHs-afZolw11zOQu-D840RFyI/view?usp=sharing
+https://drive.google.com/file/d/1za2fMbzz8NYXmnXiTVTmTi4j9Xj3eKcj/view?usp=sharing
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1_GRzEHz54C61afisYSQIqG2vvMZaajvs/view?usp=sharing
+The demonstration video will show:
 
-# Additional Demos
-[Add any extra demo materials/links]
 
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+Opening the Beard-O-Meter website.
+Uploading a photograph.
+Facial landmark detection.
+Beard and moustache region detection.
+Current facial-hair analysis.
+Future beard/moustache prediction.
+Random beard loading time.
+Final entertaining result.
+
+
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
